@@ -3,23 +3,27 @@ print("Hello , welcome to Coffee Shop")
 name = input("Whats is your name? ")
 
 if name == "Ben":
-    print("You're not welcome here Evil Ben!! Get out!!")
-    exit()
+    evil_status = input("Are you evil?\n")
+    if evil_status == "Yes":
+        print("You're not welcome here Evil Ben!! Get out!!")
+        exit()
+    else:
+        print("Oh, se you're one of those good Bens. Come on in!!")
 else:
     print("Hello " + name + ", thank you so much for coming in today \n")
 
-menu = "Black Coffee, Espresso, Latte, Cappucino"
+# menu = "Black Coffee, Espresso, Latte, Cappucino"
 
-print(name + " what would you like from our menu today? Her is what we are serving. \n" + menu)
+# print(name + " what would you like from our menu today? Her is what we are serving. \n" + menu)
 
-um = input()
+# um = input()
 
-price = 8
+# price = 8
 
-quantity = int(input("How many coffee would you like\n"))
+# quantity = int(input("How many coffee would you like\n"))
 
-total = price * quantity
+# total = price * quantity
 
-print("Thank you. Your total is: $" + str(total))
+# print("Thank you. Your total is: $" + str(total))
 
-print("Sounds good " + name + ", we'll have that " + um + " ready for you in a moment.")
+# print("Sounds good " + name + ", we'll have that " + um + " ready for you in a moment.")
